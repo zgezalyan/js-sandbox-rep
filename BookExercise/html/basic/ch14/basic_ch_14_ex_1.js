@@ -1,8 +1,17 @@
-let result = "";
+let arg = prompt("Введите число?");
+switch (arg) {
+  case '0':
+  case '1':
+    alert( 'Один или ноль' );
+    break;
 
-for (let i = 0; i <= 10; i++){
-	if (i % 2 != 0) continue;
-	result += i + " ";
+  case '2':
+    alert( 'Два' );
+    break;
+
+  case 3:
+    alert( 'Никогда не выполнится!' );
+    break;
+  default:
+    alert( 'Неизвестное значение' );
 }
-
-alert(result)

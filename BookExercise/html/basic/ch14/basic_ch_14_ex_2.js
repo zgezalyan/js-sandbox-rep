@@ -1,8 +1,12 @@
-let result = "";
+let browser = prompt("What is your brouser?", "");
 
-for (let i = 0; i <= 10; i++){
-	if (i % 2 != 0) continue;
-	result += i + " ";
+
+if (browser == "Edge"){
+	alert( "You've got the Edge!" );
 }
-
-alert(result)
+else if (browser == "Chrome" || browser == "Firefox" || browser == "Safari" || browser == "Opera") {
+	alert( 'Okay we support these browsers too' );
+}
+else {
+	alert( 'We hope that this page looks ok!' );
+}
